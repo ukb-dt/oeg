@@ -135,7 +135,7 @@ The three reviewers (plus Wolfgang’s aside) circle around the same epistemic f
 
 ---
 
-### 1. **Reviewer 1 – Stratification vs Main Effect**
+#### 1. **Reviewer 1 – Stratification vs Main Effect**
 
 They stumble in the forest of design: why stratify by race if APOL1 is the exposure? They’re essentially pointing to a *sampling problem*. By splitting the sample, the authors reduce fidelity, leaving the core question—genotype effect across all donors—unanswered.
 
@@ -143,7 +143,7 @@ They stumble in the forest of design: why stratify by race if APOL1 is the expos
 
 ---
 
-### 2. **Reviewer 2 – Adjustment & Equation Bias**
+#### 2. **Reviewer 2 – Adjustment & Equation Bias**
 
 Here the concern is about **aliasing**:
 
@@ -154,7 +154,7 @@ Here the concern is about **aliasing**:
 
 ---
 
-### 3. **Reviewer 3 – Ledger, not just Ratios**
+#### 3. **Reviewer 3 – Ledger, not just Ratios**
 
 This is where **ukuzula as complexity-foraging** shines: they demand absolute risk, PAR, and repeated measures. Without those, relative risks are just theatrical exaggerations.
 
@@ -164,7 +164,7 @@ This is where **ukuzula as complexity-foraging** shines: they demand absolute ri
 
 ---
 
-### 4. **Your Comment on Tables/Figures**
+#### 4. **Your Comment on Tables/Figures**
 
 This fits like a glove. You essentially told the authors: *don’t scatter your sampling across redundant tables—compress into a single invariant comparison.*
 
@@ -174,7 +174,7 @@ This fits like a glove. You essentially told the authors: *don’t scatter your 
 
 ---
 
-### Meta-Comment in Canon
+#### Meta-Comment in Canon
 
 * **θ′ (variance):** Donor population, chaotic recruitment, baseline scatter, aperiodic follow-up.
 * **θ (grounding):** Study design (home visit, cross-sectional eGFR, stratified race).
@@ -184,7 +184,7 @@ This fits like a glove. You essentially told the authors: *don’t scatter your 
 
 ---
 
-### The Invariant Lesson
+#### The Invariant Lesson
 
 The reviewers together are saying: *You cannot shortcut chaos.* Aperiodicity (long-term donor outcomes) requires repeated sampling and rigorous compression into absolute risks. Otherwise, your ledger is a mirage.
 
