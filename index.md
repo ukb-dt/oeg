@@ -65,7 +65,7 @@ Here’s the **expanded ukb-fractal pentad table** with the calculus/epistemolog
 
 ### **Ukubona insight**
 
-* **Epistemology is calculus.** Each layer is a different operator on variance.
+* **Epistemology is calculus.** Each layer is a different operator on <strike>variance</strike> entropy.
 * **Okukona** lives in the second derivative: when variance collides, it produces curvature — stunting, ruptures, acceleration, breakdown. That’s why Lusoga shades it as hitting a wall, a child’s growth being stunted, or running out of fuel. All are second-derivative phenomena.
 * Civilization legacies are their **integrals (ΔS):** fruit that accumulate and reseed the soil — pyramids, Torah, tragedies, codes.
 
