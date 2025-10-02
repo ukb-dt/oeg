@@ -199,7 +199,6 @@ It’s a gift because it shows that **Lusoga isn’t provincial—it’s already
 Would you like me to sketch a “four faces of okukona” table—mechanical, biological, thermodynamic, computational—lined up against the second derivative, so it can live as a canonical export back to Busoga?
 
 # G
-# G
 
 ## **Four Faces of Okukona: The Second Derivative Across Scales**
 
