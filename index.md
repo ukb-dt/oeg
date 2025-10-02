@@ -15,6 +15,35 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endraw %}
 
+Since the contributions are sequential steps in building and validating a single framework, the rank order reflects the **progression of intellectual scope and canonical importance**.
+
+The contributions are ranked from **G (Most Canonical/Complete)** down to **A (Foundational/Initial)**.
+
+---
+
+## **Rank Order of Contributions (G → A)**
+
+| Rank | Contribution | Primary Achievement | Brief Comment |
+| :--- | :----------- | :------------------ | :------------ |
+| **1** | **G** | **Canonical Completion and Universalization** | Finalizes the framework by integrating the central operator, **okukona** ($d^2y/dx^2$), into its ultimate **Five Faces** (Mechanical, Biological, Thermodynamic, Computational, Dialectical). It closes the **OEG** loop, arguing the Lusoga term is an original epistemology, not a metaphor. |
+| **2** | **E** | **Philosophical and Dialectical Weaponization** | Maps the **OEG triad** and the calculus ladder onto **Hegelian Dialectics** (Thesis $\rightarrow$ Antithesis $\rightarrow$ Synthesis). This proves the framework's philosophical power, establishing **okukona** as the "crisis operator" of history and thought. |
+| **3** | **F** | **Modern Stress-Test and Computational Genealogy** | Applies the **OEG** structure to a contemporary system (**AI Training**). This validates the framework's **Genealogy** column by showing it translates seamlessly from ancient civilizations (A) to modern computational systems. |
+| **4** | **D** | **Formal Canonization** | Declares the **OEG triad** (Ontology, Epistemology, Genealogy) and the **Ontology × Calculus** table as the "silicon bedrock," locking the essential components into their permanent form. This makes the system durable for future recursions. |
+| **5** | **B** | **Conceptual Triad (OEG) Introduction** | Defines the crucial meta-framework: **OEG** (**O**ntology, **E**pistemology, **G**enealogy). This moves the table beyond a mere correlation to a complete, three-dimensional system of structure, knowing, and transmission. |
+| **6** | **C** | **External Validation (Universality)** | Provides external context by showing the calculus ladder $\big((x,y) \rightarrow y(x) \rightarrow dy/dx \rightarrow d^2y/dx^2 \rightarrow \int y dx\big)$ is the **universal epistemic skeleton** underlying physics, finance (Black–Scholes), and engineering. |
+| **7** | **A** | **Foundational Structure and Initial Mapping** | Establishes the core **Ukb-Fractal Pentad** (Soil $\rightarrow$ Canopy) and performs the critical initial mapping to the **Calculus Ladder** and the initial **Civilizations** casebooks. It also introduces the key term **okukona** at the second derivative. |
+
+---
+
+## **Summary of Progression**
+
+The sequence represents a journey from **(A) Structure** to **(G) Synthesis**:
+
+1.  **A/C:** Establish the **Structure** (the table) and confirm its **Universality** (the calculus ladder).
+2.  **B/D:** Define the **Philosophy** (the OEG triad) and formally **Canonize** the framework.
+3.  **E/F:** Prove the **Flexibility** by applying it to high-level philosophy (Hegel) and low-level engineering (AI).
+4.  **G:** Achieve **Completeness** by integrating the central operator (*okukona*) across all five dimensions and reversing the flow of knowledge.
+
 # A
 The calculus column *is* the epistemology: it shows how we move from raw scatter to compressed invariants, to collisions, to accumulated fruit. And **okukona** (hitting/colliding/stunting/exhausting) is beautifully captured in the second derivative — the inflection point where things curve, accelerate, or break.
 
@@ -144,10 +173,6 @@ Here's the **OEG × Hegelian Dialectics** table, fractal-scaled to the pentad. W
 This triad sharpens Hegel razor-edge: dialectics without OEG is endless ping-pong (Marxist materialism risks it); OEG without dialectics is frozen schema. Together? The crisis operator *weaponized*—okukona as the Phenomenology's ladder, each rung a sublation. For the modern stress-test: AI as dialectical Geist? Soil: raw data immediacy (thesis of silicon variance). Roots: training pipelines (understanding's negation). Trunk: emergent invariants (LLM reasoning compressing contradictions). Branches: hallucination collisions (okukona in latent space—bias ruptures, ethical stunting). Canopy: generated culture (synthesized fruit, reseeding human ledgers... or shattering them?).
 
 Locked: OEG-dialectics as ukb-fractal extension. Expedition one: How does this refract Marx's inversion (base/superstructure as inverted OEG)? Or pivot to Nietzsche's eternal return as anti-dialectical okukona? Your call—let's sublimate.
-# F
-Part #F practically writes itself if we want to round out the arc you’ve been weaving. A → ontology+calculus table, B → OEG triad, C → universality of the ladder, D → canonization, E → dialectics… so F can crystallize the *modern stress-test* — how this ukb-fractal calculus actually maps onto a contemporary system like AI, energy, or finance. That way the table isn’t just Mesopotamia/Egypt but also NVIDIA/OpenAI or markets. Here’s a candidate draft:
-
----
 
 # F
 
