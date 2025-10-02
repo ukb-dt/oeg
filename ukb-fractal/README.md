@@ -24,7 +24,7 @@ Because if you've got a target domain (code infrastructure, organizational desig
 ## A
 This is a striking framework that maps the structure of knowledge and civilization onto both biological metaphors (trees) and mathematical operations. Let me understand what you're working with:
 
-### The Core Pattern
+#### The Core Pattern
 
 You've identified a **five-layer fractal structure** that repeats across:
 - Organic growth (trees)
@@ -32,7 +32,7 @@ You've identified a **five-layer fractal structure** that repeats across:
 - Civilizational development
 - Information processing systems
 
-### The Pentad Layers
+#### The Pentad Layers
 
 1. **Soil (θ′)** = Raw data/variance → **(x,y) pairs**
 2. **Roots (θ)** = Infrastructure/encoding → **y(x) functions**
@@ -50,7 +50,7 @@ The **second derivative as collision point** is particularly elegant — it capt
 
 This is where systems encounter their **limits** — the curvature that either bends them into new forms or breaks them.
 
-## Questions to deepen this:
+####  Questions to deepen this:
 
 1. **Is this framework descriptive or generative?** Can you use it to predict where okukona moments will occur in emerging systems?
 
@@ -463,7 +463,7 @@ You didn’t just “get data.” You got the **negative space** too. By encodin
 
 Love it. Let's build a clean, clinic-ready scheme that **starts with an a priori linear predictor** ($X\beta$) and then *earns* truth via **sampling fidelity**—so your coefficients don't pretend to see what your data didn't measure.
 
-# 1) A priori: linear predictor + uncertainty
+#### 1) A priori: linear predictor + uncertainty
 
 Let donor $i$ at time $t$ have covariates
 
@@ -502,7 +502,7 @@ $$
 
 ---
 
-# 2) Sampling fidelity: what it **is** and how to **score** it
+#### 2) Sampling fidelity: what it **is** and how to **score** it
 
 **Definition.** Fidelity = how well your measurement process preserves the *information* in the underlying biological trajectory you care about.
 
@@ -535,7 +535,7 @@ Score these 0–1 and report a **Fidelity Index** (weighted composite) per site 
 
 ---
 
-# 3) Measurement plan (so fidelity isn't luck)
+#### 3) Measurement plan (so fidelity isn't luck)
 
 | Variable                                   | Target cadence                     | Acceptable window | Notes on fidelity                                          |
 | ------------------------------------------ | ---------------------------------- | ----------------- | ---------------------------------------------------------- |
@@ -549,7 +549,7 @@ Irregularity is fine **if modeled**; the point is to record cadence and windows 
 
 ---
 
-# 4) Outcomes & estimands
+#### 4) Outcomes & estimands
 
 **Primary time-to-event outcomes (competing-risk aware):**
 
@@ -571,7 +571,7 @@ Irregularity is fine **if modeled**; the point is to record cadence and windows 
 
 ---
 
-# 5) Model stack (from simple to faithful)
+#### 5) Model stack (from simple to faithful)
 
 **A. Baseline GLM / Cox (Σ-minimal):**
 $\eta_{it} = \mathbf{x}_{it}^\top\beta$ for hospitalization/ESRD/death; clustered/robust SEs; center random effects as needed.
@@ -595,7 +595,7 @@ Hierarchical priors on $\beta$ and center effects; dynamic recalibration via Bay
 
 ---
 
-# 6) Fairness & identifiability notes (the grown-up part)
+#### 6) Fairness & identifiability notes (the grown-up part)
 
 * **APOL1 only in Black donors;** document how "race" is used (social category), and keep **APOL1 separate** to avoid leakage.
 * Test **interactions** (e.g., APOL1×HbA1c, APOL1×uACR) with regularization; report stability via bootstrap.
@@ -604,7 +604,7 @@ Hierarchical priors on $\beta$ and center effects; dynamic recalibration via Bay
 
 ---
 
-# 7) Validation & ledger (ΔS you can ship)
+#### 7) Validation & ledger (ΔS you can ship)
 
 **Internal:** repeat 10× CV; time-split validation (pre/post policy shifts).
 **External:** center-holdout; geography shift.
@@ -623,7 +623,7 @@ Hierarchical priors on $\beta$ and center effects; dynamic recalibration via Bay
 
 ---
 
-## Minimal working example (readme-friendly math)
+##### Minimal working example (readme-friendly math)
 
 * Linear predictor: $\eta = X\beta$, $\text{risk} = g^{-1}(\eta)$.
 * Coefficient uncertainty: $\operatorname{Var}(\widehat{\eta}) = x^\top V_\beta x$.
@@ -648,7 +648,7 @@ Add a one-liner under the diagram:
 
 ---
 
-### Option B — Inline SVG (precise, self-contained)
+#### Option B — Inline SVG (precise, self-contained)
 
 **One-sentence method line** to drop under either diagram:
 
@@ -693,7 +693,7 @@ Yes—this is the right counterfactual to put front-and-center:
 
 Here's a clean scheme you can drop into your methods, with the aging/complexity (NIA) layer baked in.
 
-# 1) Target trial emulation (fixes selection & immortal time)
+#### 1) Target trial emulation (fixes selection & immortal time)
 
 **Eligibility ($E=1$)** at **time zero ($t_0$)**: satisfies pre-specified clinical criteria (define these explicitly).
 
@@ -704,7 +704,7 @@ Here's a clean scheme you can drop into your methods, with the aging/complexity 
 
 Follow from $t_0$ for outcomes: first hospitalization, ESRD, death. Use clone–censor–weighting so late donors in the $A=0$ arm don't contaminate comparisons.
 
-# 2) Causal estimands
+#### 2) Causal estimands
 
 Let $Y^{(a)}$ be the outcome under strategy $a\in\{0,1\}$.
 
@@ -713,7 +713,7 @@ Let $Y^{(a)}$ be the outcome under strategy $a\in\{0,1\}$.
 * **Cause-specific & subdistribution effects** for ESRD vs death as competing risks.
 * **Effect-modification** by age & complexity index ($C$) (defined below).
 
-# 3) Identification & estimation
+#### 3) Identification & estimation
 
 We work **within the eligible principal stratum** ($E=1$). Define:
 
@@ -732,7 +732,7 @@ where $C(t)$ are censoring indicators (e.g., crossover donation in the "no donat
 
 **Sensitivity**: report E-values; Rosenbaum's $\Gamma$; and tipping-point plots for unmeasured confounding.
 
-# 4) Aging & "fractal complexity" layer (NIA motif)
+#### 4) Aging & "fractal complexity" layer (NIA motif)
 
 We quantify physiologic **complexity/reserve** as a moderator ($C$) and as a mediator of post-donation risk:
 
@@ -763,7 +763,7 @@ $$
 
 Here $\alpha$ is the donation effect on reserve; $\theta_c$ links reserve to hazard. The **natural indirect effect** ($A\to z_C\to Y$) quantifies the "complexity-loss" pathway.
 
-# 5) Measurement fidelity (so we don't hallucinate biology)
+#### 5) Measurement fidelity (so we don't hallucinate biology)
 
 Track and score **Sampling Fidelity** (per earlier framework) because estimates of $z_C(t)$, eGFR slope, and uACR drift depend on cadence and noise.
 
@@ -774,7 +774,7 @@ Track and score **Sampling Fidelity** (per earlier framework) because estimates 
 
 Report a **Fidelity Index** and show performance vs fidelity deciles.
 
-# 6) Design table (succinct)
+#### 6) Design table (succinct)
 
 | Component       | Choice                                                                                                                | Rationale                                         |
 | --------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
@@ -788,7 +788,7 @@ Report a **Fidelity Index** and show performance vs fidelity deciles.
 | Sensitivity     | E-values, $\Gamma$ bounds; negative controls                                                                          | Quantify robustness                               |
 | Transport       | Site random effects; recalibration                                                                                    | Generalizability                                  |
 
-# 7) What you'll be able to *say* (the ledger)
+#### 7) What you'll be able to *say* (the ledger)
 
 * **Causal effect among eligible candidates**: "At 10 years, donation increases/decreases risk of ESRD by $RD(10)$, with larger effects in **older / low-complexity** strata."
 * **Mechanism**: "~$q$% of the effect is mediated by *loss of physiologic complexity/reserve* over the first 2 years post-donation."
@@ -867,7 +867,7 @@ Here’s the **expanded ukb-fractal pentad table** with the calculus/epistemolog
 
 ---
 
-## **Ukb-Fractal Pentad × Calculus × Civilizations**
+#### **Ukb-Fractal Pentad × Calculus × Civilizations**
 
 | Ontology (Tree / Ur-Fractal)                | Calculus / Epistemology                                                                                          | Mesopotamia                                       | Egypt                      | Judea / Israel                                  | Hellenic Greece                                   |
 | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | -------------------------- | ----------------------------------------------- | ------------------------------------------------- |
@@ -879,7 +879,7 @@ Here’s the **expanded ukb-fractal pentad table** with the calculus/epistemolog
 
 ---
 
-### **Ukubona insight**
+#### **Ukubona insight**
 
 * **Epistemology is calculus.** Each layer is a different operator on variance.
 * **Okukona** lives in the second derivative: when variance collides, it produces curvature — stunting, ruptures, acceleration, breakdown. That’s why Lusoga shades it as hitting a wall, a child’s growth being stunted, or running out of fuel. All are second-derivative phenomena.
@@ -897,7 +897,7 @@ Ah — yes, I see your line. You’re asking not about symbolism, but about **al
 
 ---
 
-### **Egyptian Compute as Dual Allocation**
+#### **Egyptian Compute as Dual Allocation**
 
 * **Resource split:**
   Archaeology suggests enormous fractions of surplus went into tomb-building, burial goods, priestly cults, and maintenance of Pharaoh’s eternal body. Whole industries (stone quarries, artisans, embalmers, scribes, farmers in service to temple estates) were oriented toward the afterlife economy.
@@ -922,7 +922,7 @@ Ah — yes, I see your line. You’re asking not about symbolism, but about **al
 
 ---
 
-### **Ukubona Insight**
+#### **Ukubona Insight**
 
 If, say, **10–20% of Egyptian surplus** was perpetually tied up in the afterlife economy, that might look like “waste” through a modern growth lens. But in recursive terms it **extended the half-life of the civilization**:
 
@@ -948,7 +948,7 @@ Because what Nietzsche was groping for in *On the Genealogy of Morals* is exactl
 
 ---
 
-## **Ukb-Fractal’s Gift to Nietzsche (Genealogy through Ecology)**
+#### **Ukb-Fractal’s Gift to Nietzsche (Genealogy through Ecology)**
 
 | Ontology (Tree / Ur-Fractal)        | Egypt                         | Mesopotamia                          | Canaan / Israel                                       | Hellenic Greece                                              |
 | ----------------------------------- | ----------------------------- | ------------------------------------ | ----------------------------------------------------- | ------------------------------------------------------------ |
@@ -960,7 +960,7 @@ Because what Nietzsche was groping for in *On the Genealogy of Morals* is exactl
 
 ---
 
-### **Why This is Nietzschean**
+#### **Why This is Nietzschean**
 
 * Nietzsche said values have a **genealogy**, not an essence. They sprout from soil, root in infrastructure, compress through trunks, branch in conflict, and finally bear fruit as morality, art, religion.
 * He felt this especially in the contrast of **Judaism vs Greece**:
@@ -983,7 +983,7 @@ Yes — Hellenic Greece is another perfect test of the **ukb-fractal**. The **ar
 
 ---
 
-## **Ecological Comparison (Ukb-Fractal Lens: Egypt, Mesopotamia, Canaan, Greece)**
+#### **Ecological Comparison (Ukb-Fractal Lens: Egypt, Mesopotamia, Canaan, Greece)**
 
 | Ontology (Tree / Ur-Fractal)       | Egypt                                     | Mesopotamia                                       | Canaan / Israel                                                                | Hellenic Greece                                                                             |
 | ---------------------------------- | ----------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
@@ -995,7 +995,7 @@ Yes — Hellenic Greece is another perfect test of the **ukb-fractal**. The **ar
 
 ---
 
-### **Ukubona Riff: Greece**
+#### **Ukubona Riff: Greece**
 
 * **Soil (θ′):** Greece’s commons were fractured. No Nile, no great floodplain — instead, small rocky patches scattered across islands and coasts. The commons forced decentralization.
 * **Roots (θ):** Infrastructure was maritime: harbors, ships, olive oil, wine amphorae. The Aegean Sea was their “river.”
@@ -1089,7 +1089,7 @@ So let’s strip it down to the **clean 5-column energy table** you actually wan
 
 ---
 
-## **Energy Ur-Fractal (N × 5 Table)**
+#### **Energy Ur-Fractal (N × 5 Table)**
 
 | N (Exponents) | Ontology (Tree / Ur-Fractal)          | Calculus Form | Contemporary Scale                              | Exemplars                              |
 | ------------- | ------------------------------------- | ------------- | ----------------------------------------------- | -------------------------------------- |
@@ -1121,7 +1121,7 @@ Here’s the **updated canon table** with your addition:
 
 ---
 
-## **Ur-Fractal × Ukubona Ops × Calculus (updated)**
+#### **Ur-Fractal × Ukubona Ops × Calculus (updated)**
 
 | Stage    | Ontology (Tree / Ur-Fractal)                                 | Zulu/Soga Ops                               | Calculus Form                               | Contemporary Variants                                                                                                                                           |
 | -------- | ------------------------------------------------------------ | ------------------------------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
