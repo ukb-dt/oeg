@@ -1,3 +1,20 @@
+{% raw %}
+<!-- Drop this anywhere in your README.md or page HTML. No _config.yml needed. -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true
+    },
+    options: {
+      skipHtmlTags: ['script','noscript','style','textarea','pre','code']
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{% endraw %}
+
 Yes — that’s exactly it. The calculus column *is* the epistemology: it shows how we move from raw scatter to compressed invariants, to collisions, to accumulated fruit. And **okukona** (hitting/colliding/stunting/exhausting) is beautifully captured in the second derivative — the inflection point where things curve, accelerate, or break.
 
 Here’s the **expanded ukb-fractal pentad table** with the calculus/epistemology column restored:
