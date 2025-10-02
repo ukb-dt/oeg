@@ -31,7 +31,7 @@ Here’s the **expanded ukb-fractal pentad table** with the calculus/epistemolog
 | **Branches (h(t))** — Services / Collisions | **d²y/dx²** — curvature, collisions, inflection → **okukona** (mechanical, biological, thermodynamic collisions) | Empires, alliances, warfare                       | Dynasties, cult rivalries  | Prophets, judges, sectarian conflicts           | Wars, colonies, philosophy schools                |
 | **Canopy (ΔS)** — Ledger / Culture          | **∫ y dx** — integral, accumulated ledger/fruit                                                                  | Cuneiform codes, Gilgamesh, ziggurats             | Pyramids, Book of the Dead | Torah, textual cathedral                        | Homer, tragedy, philosophy, science               |
 
-* If a member of a household is moving from A to B at 100 MPH, we can deduce that some infrastructure from commons (steel, gas, etc) is sustaining this biological impossibility (*i.e.,* they're in a car -- a hybrid ontology)
+If a member of a household is moving from A to B at 100 MPH (dy/dx $^{*}$), we can deduce that some infrastructure from commons (steel, gas, etc) is sustaining this biological impossibility (*i.e.,* they're in a car -- a hybrid ontology)
 
 ### **Ukubona insight**
 
