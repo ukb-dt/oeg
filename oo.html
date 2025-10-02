@@ -1,0 +1,88 @@
+<!-- README-ready inline SVG: Once-in-a-Lifetime Donation Fork -->
+<svg viewBox="0 0 920 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Eligibility → single decision → two lifelong trajectories, modified by age/complexity and measured with sampling fidelity.">
+  <style>
+    .box{fill:#fff;stroke:#111;stroke-width:1.5;rx:10;ry:10}
+    .title{font:700 14px/1.3 system-ui, -apple-system, Segoe UI, Roboto, Arial}
+    .text{font:12px/1.35 system-ui, -apple-system, Segoe UI, Roboto, Arial}
+    .small{font:11px/1.35 system-ui, -apple-system, Segoe UI, Roboto, Arial; fill:#333}
+    .label{font:12px/1.35 system-ui, -apple-system, Segoe UI, Roboto, Arial; fill:#111}
+    .arrow{stroke:#111;stroke-width:1.5;marker-end:url(#arrow)}
+    .note{fill:#f7f7f7;stroke:#ccc;rx:8;ry:8}
+  </style>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#111"/>
+    </marker>
+  </defs>
+
+  <!-- Eligibility -->
+  <rect x="40" y="200" width="240" height="120" class="box"/>
+  <text x="60" y="225" class="title">Eligibility (E=1)</text>
+  <text x="60" y="245" class="text">Meets clinical criteria at t₀</text>
+  <text x="60" y="265" class="small">age, sex, race; HbA1c, HTN Rx, SBP; uACR; eGFR;</text>
+  <text x="60" y="282" class="small">smoking; BMI; APOL1 (Black only); relatedness; partner; center</text>
+
+  <!-- Decision -->
+  <rect x="330" y="215" width="180" height="90" class="box"/>
+  <text x="350" y="240" class="title">Decision (once)</text>
+  <text x="350" y="260" class="text">Donate now vs do not donate</text>
+
+  <!-- Arrows to decision -->
+  <line x1="280" y1="260" x2="330" y2="260" class="arrow"/>
+
+  <!-- Branch: Donate -->
+  <rect x="560" y="110" width="250" height="110" class="box"/>
+  <text x="580" y="135" class="title">Post-donation trajectory</text>
+  <text x="580" y="156" class="text">Kidney reserve after nephrectomy</text>
+  <text x="580" y="176" class="small">latent eGFR(t), uACR(t), SBP(t), reserve(t)</text>
+
+  <!-- Branch: No donate -->
+  <rect x="560" y="320" width="250" height="110" class="box"/>
+  <text x="580" y="345" class="title">Non-donor trajectory</text>
+  <text x="580" y="366" class="text">Natural history without nephrectomy</text>
+  <text x="580" y="386" class="small">latent eGFR(t), uACR(t), SBP(t), reserve(t)</text>
+
+  <!-- Decision arrows to branches -->
+  <line x1="510" y1="260" x2="560" y2="165" class="arrow"/>
+  <line x1="510" y1="260" x2="560" y2="365" class="arrow"/>
+
+  <!-- Outcomes donate -->
+  <rect x="830" y="110" width="70" height="110" class="note"/>
+  <text x="865" y="130" text-anchor="middle" class="label">ΔS</text>
+  <text x="865" y="150" text-anchor="middle" class="small">Hosp.</text>
+  <text x="865" y="168" text-anchor="middle" class="small">ESRD</text>
+  <text x="865" y="186" text-anchor="middle" class="small">Death</text>
+  <line x1="810" y1="165" x2="830" y2="165" class="arrow"/>
+
+  <!-- Outcomes no-donate -->
+  <rect x="830" y="320" width="70" height="110" class="note"/>
+  <text x="865" y="340" text-anchor="middle" class="label">ΔS</text>
+  <text x="865" y="360" text-anchor="middle" class="small">Hosp.</text>
+  <text x="865" y="378" text-anchor="middle" class="small">ESRD</text>
+  <text x="865" y="396" text-anchor="middle" class="small">Death</text>
+  <line x1="810" y1="375" x2="830" y2="375" class="arrow"/>
+
+  <!-- Modifiers block -->
+  <rect x="40" y="40" width="380" height="110" class="note"/>
+  <text x="60" y="65" class="title">Modifiers (slope of each branch)</text>
+  <text x="60" y="88" class="small">• Age (loss of physiologic complexity with aging)</text>
+  <text x="60" y="106" class="small">• Complexity / Reserve: eGFR & uACR variability, BP entropy, frailty</text>
+  <text x="60" y="124" class="small">• Center / environment</text>
+
+  <!-- Modifiers arrows -->
+  <line x1="230" y1="150" x2="620" y2="150" class="arrow"/>
+  <line x1="230" y1="150" x2="620" y2="360" class="arrow"/>
+
+  <!-- Fidelity block -->
+  <rect x="40" y="370" width="420" height="110" class="note"/>
+  <text x="60" y="395" class="title">Sampling Fidelity (how precisely we estimate)</text>
+  <text x="60" y="418" class="small">• Cadence / Nyquist (eGFR/uACR/SBP schedules)</text>
+  <text x="60" y="436" class="small">• Signal-to-noise (state-space fits), Missingness as signal</text>
+  <text x="60" y="454" class="small">• Calibration / transportability</text>
+
+  <!-- Fidelity arrows -->
+  <line x1="460" y1="425" x2="620" y2="165" class="arrow"/>
+  <line x1="460" y1="425" x2="620" y2="375" class="arrow"/>
+</svg>
+
